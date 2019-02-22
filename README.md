@@ -22,4 +22,4 @@ These are some useful visual studio snippets the help me in the day to day.
 2. Tools
 3. Templates Manager
 4. Under Scopes selected the snippet(s) language
-5. ![ReSharper_Import](/assets/ReSharper_Import.jpg "Click Import")
+5. ![ReSharper_Import](/Assets/ReSharper_Import.jpg "Click Import")
