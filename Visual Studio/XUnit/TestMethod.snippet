@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>XUnit Test Method</Title>
+      <Shortcut>ut</Shortcut>
+      <Description>Code snippet for a test method</Description>
+      <Author>Fredy Adriano Jiménez Martínez</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>UoW</ID>
+          <ToolTip>Replace with the name of the test method</ToolTip>
+          <Default>UoW</Default>
+        </Literal>
+        <Literal>
+          <ID>InitialCondition</ID>
+          <ToolTip>Replace with the initial condition of the test method</ToolTip>
+          <Default>InitialCondition</Default>
+        </Literal>
+        <Literal>
+          <ID>ExpectedResult</ID>
+          <ToolTip>Replace with the expected result of the test method</ToolTip>
+          <Default>ExpectedResult</Default>
+        </Literal>
+        <Literal>
+          <ID>TestMethod</ID>
+          <Function>SimpleTypeName(Fact)</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[
+        [$TestMethod$]
+        public void $UoW$_$InitialCondition$_$ExpectedResult$()
+        {
+            // Arrange
+            $end$
+          
+            // Act
+          
+            // Assert
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,11 @@
+[Fact]
+public async void $UoW$_$InitialCondition$_$ExpectedResult$()
+{
+    // Arrange
+    $END$
+
+    // Act
+
+    // Asset
+
+}
