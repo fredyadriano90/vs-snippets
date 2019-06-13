@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Xamarin form bindable property</Title>
+      <Shortcut>propb</Shortcut>
+      <Description>Xamarin form bindable property</Description>
+      <Author>Fredy Adriano Jiménez Martínez</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+
+        <Literal>
+          <ID>Name</ID>
+          <ToolTip>Property name</ToolTip>
+          <Default>Name</Default>
+        </Literal>
+
+        <Literal>
+          <ID>Type</ID>
+          <ToolTip>Type</ToolTip>
+          <Default>Type</Default>
+        </Literal>
+
+        <Literal>
+          <ID>ParentType</ID>
+          <ToolTip>ParentType</ToolTip>
+          <Default>ParentType</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[
+        public static readonly BindableProperty $Name$Property = BindableProperty.Create(
+            nameof($Name$),
+            typeof($Type$),
+            typeof($ParentType$));
+
+        public $Type$ $Name$
+        {
+            get => ($Type$)GetValue($Name$Property);
+            set => SetValue($Name$Property, value);
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
