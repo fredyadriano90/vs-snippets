@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>JsonProperty full</Title>
+      <Shortcut>jpfull</Shortcut>
+      <Description>JsonProperty</Description>
+      <Author>Fredy Adriano Jiménez Martínez</Author>
+    </Header>
+    <Snippet>
+       <Declarations>
+
+        <Literal>
+          <ID>Name</ID>
+          <ToolTip>Json Property name</ToolTip>
+          <Default></Default>
+        </Literal>
+
+        <Literal>
+          <ID>PropertyName</ID>
+          <ToolTip>Property name</ToolTip>
+          <Default>MyProperty</Default>
+        </Literal>
+
+        <Literal>
+          <ID>Type</ID>
+          <ToolTip>Type</ToolTip>
+          <Default>string</Default>
+        </Literal>
+
+      </Declarations>
+
+      <Code Language="csharp">
+        <![CDATA[[JsonProperty("$Name$")]
+        public $Type$ $PropertyName$ { get; set; }
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
