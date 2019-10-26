@@ -30,11 +30,11 @@
         </Literal>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[private $type$ $fieldName$;
-        public $type$ $PropertyName$
+        <![CDATA[private $type$ _$fieldName$;
+        public $type$ $PropertyName$$fieldName$
         {
-            get => $fieldName$;
-            set => SetProperty(ref $fieldName$, value);
+            get => _$fieldName$;
+            set => SetProperty(ref _$fieldName$, value);
         }$end$]]>
       </Code>
     </Snippet>

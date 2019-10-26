@@ -26,8 +26,8 @@
       </Declarations>
       <Code Language="csharp">
         <![CDATA[private DelegateCommand $fieldName$Command;
-        public DelegateCommand $CommandName$Command =>
-            $fieldName$Command ?? ($fieldName$Command = new DelegateCommand(async () => await $CommandName$()));
+        public DelegateCommand $CommandName$Command => $fieldName$Command
+            ?? ($fieldName$Command = new DelegateCommand(async () => await $CommandName$Async()));
 
         private async Task $CommandName$Async()
         {
