@@ -7,7 +7,7 @@ These are some useful visual studio snippets the help me in the day to day.
 - Visual Studio
 - Resharper
 
-### Add and snippet to Visual Studio
+### Add a snippet to Visual Studio
 
 1. Tools
 2. Code Snippets Manager
@@ -16,7 +16,7 @@ These are some useful visual studio snippets the help me in the day to day.
     1. Add to import a whole directory with the snippets
     2. Import to search an specific snippet.
 
-### Add and snippet to Visual Studio with Resharper
+### Add a snippet to Visual Studio with Resharper
 
 1. Resharper
 2. Tools
