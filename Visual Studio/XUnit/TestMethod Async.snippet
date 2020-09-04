@@ -6,7 +6,7 @@
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
       <Title>XUnit Test Method Asynchronous</Title>
-      <Shortcut>utA</Shortcut>
+      <Shortcut>uta</Shortcut>
       <Description>Code snippet for a test method asynchronous</Description>
       <Author>Fredy Adriano Jiménez Martínez</Author>
     </Header>
@@ -14,6 +14,7 @@
       <Imports>
         <Import>
           <Namespace>XUnit</Namespace>
+          <Namespace>System.Threading.Tasks</Namespace>
         </Import>
       </Imports>
       <Declarations>
@@ -40,13 +41,13 @@
       <Code Language="csharp">
         <![CDATA[
         [$TestMethod$]
-        public async void $UoW$_$InitialCondition$_$ExpectedResult$()
+        public async Task $UoW$_$InitialCondition$_$ExpectedResult$()
         {
             // Arrange
             $end$
-          
+
             // Act
-          
+
             // Assert
         }]]>
       </Code>
