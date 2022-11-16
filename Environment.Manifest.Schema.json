@@ -2,7 +2,6 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"definitions": {
 		"appSetting": {
-			"type":"object",
 			"properties": {
 				"Name": {
 					"title": "Name",
@@ -12,8 +11,7 @@
 					"title": "Value",
 					"type": "string"
 				}
-			},
-			"required":["Name", "Value"]
+			}
 		}
 	},
 	"title": "Environment Manifest",
@@ -26,9 +24,10 @@
 			"items": {
 				"type": "object",
 				"description": "A list of application settings",
-				"additionalItems": {
+				"additionalProperties": {
 					"$ref": "#/definitions/appSetting"
-				}
+				},
+				"required":["Name", "Value"]
 			},
 			"minItems": 0,
 			"uniqueItems": true
