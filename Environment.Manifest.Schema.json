@@ -16,11 +16,9 @@
 				"description": "A list of application settings",
 				"properties": {
 					"Name": {
-						"title": "Name",
 						"type": "string"
 					},
 					"Value": {
-						"title": "Value",
 						"type": "string"
 					}
 				},
