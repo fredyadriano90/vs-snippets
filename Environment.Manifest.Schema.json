@@ -26,7 +26,9 @@
 			"items": {
 				"type": "object",
 				"description": "A list of application settings",
-				"$ref": "#/definitions/appSetting"
+				"additionalItems": {
+					"$ref": "#/definitions/appSetting"
+				}
 			},
 			"minItems": 0,
 			"uniqueItems": true
