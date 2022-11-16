@@ -1,5 +1,21 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"definitions": {
+		"appSetting": {
+			"type":"object",
+			"properties": {
+				"Name": {
+					"title": "Name",
+					"type": "string"
+				},
+				"Value": {
+					"title": "Value",
+					"type": "string"
+				}
+			},
+			"required":["Name", "Value"]
+		}
+	},
 	"title": "Environment Manifest",
 	"description": "Jot Environment Manifest",
 	"type": "string",
@@ -9,15 +25,10 @@
 			"type": "array",
 			"items": {
 				"type": "object",
-				"properties": {
-					"Name": {
-						"type": "string"
-					},
-					"Value": {
-						"type": "string"
-					}
-				},
-				"required": ["Name", "Value"]
+				"description": "A list of application settings",
+				"additionalProperties": {
+					"$ref": "#/definitions/appSetting"
+				}
 			},
 			"minItems": 0,
 			"uniqueItems": true
